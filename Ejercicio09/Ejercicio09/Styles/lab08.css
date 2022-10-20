@@ -1,0 +1,24 @@
+﻿^ContentPage {
+    background-color: azure;
+}
+
+.header {
+    color: black;
+    font-size: large;
+    text-align: center;
+    margin: 20;
+}
+
+entry {
+    color: blue;
+    text-align: left;
+    padding: 10;
+}
+#triangulo{
+    background-color: orangered;
+}
+
+#myButton {
+    background-color: white;
+    color: green;
+}

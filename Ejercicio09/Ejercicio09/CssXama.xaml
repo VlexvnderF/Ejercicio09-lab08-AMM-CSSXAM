@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio09.CssXama">
+    <ContentPage.Content>
+        <StackLayout StyleClass="header">
+            <Label Text="CSS in Xamarin.Forms" />
+            <Label Text="Laboratorio 08 - AEFR" />
+            <Path  Stroke="Black"      
+      Aspect="Uniform"
+      HorizontalOptions="Start">
+                <Path.Data >
+                    <PathGeometry >
+                        <PathGeometry.Figures>
+                            <PathFigureCollection >
+                                <PathFigure IsClosed="True"
+                                StartPoint="10,100" >
+                                    <PathFigure.Segments>
+                                        <PathSegmentCollection >
+                                            <LineSegment Point="200,200" />
+                                            <LineSegment Point="200,100" />
+                                        </PathSegmentCollection>
+                                    </PathFigure.Segments>
+                                </PathFigure>
+                            </PathFigureCollection>
+                        </PathGeometry.Figures>
+                    </PathGeometry>
+                </Path.Data>
+            </Path>
+            <Path Stroke="Green"
+      StrokeThickness="2"
+      Fill="Orange">
+                <Path.Data>
+                    <GeometryGroup>
+                        <EllipseGeometry RadiusX="50"
+                             RadiusY="50"
+                             Center="75,75" />
+                        <EllipseGeometry RadiusX="50"
+                             RadiusY="50"
+                             Center="125,75" />
+                        <EllipseGeometry RadiusX="50"
+                             RadiusY="50"
+                             Center="125,125" />
+                        <EllipseGeometry RadiusX="50"
+                             RadiusY="50"
+                             Center="125,125" />
+                    </GeometryGroup>
+                </Path.Data>
+            </Path>
+
+            <Entry />
+            <Button StyleId="myButton" Text="CSS" />
+        </StackLayout>
+    </ContentPage.Content>
+    <ContentPage.Resources>
+        <StyleSheet Source="Styles/lab08.css" />
+    </ContentPage.Resources>
+    
+</ContentPage>
